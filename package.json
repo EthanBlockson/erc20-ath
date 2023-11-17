@@ -1,0 +1,25 @@
+{
+  "name": "erc20-ath",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EthanBlockson/erc20-ath.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EthanBlockson/erc20-ath/issues"
+  },
+  "homepage": "https://github.com/EthanBlockson/erc20-ath#readme",
+  "dependencies": {
+    "axios": "^1.6.2",
+    "dotenv": "^16.3.1",
+    "node": "^21.1.0",
+    "node-telegram-bot-api": "^0.64.0"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  EVM(dataset: archive, network: eth) {
+    DEXTrades(
+      limitBy: { by: Block_Time, count: 2500000 }
+      limit: { count: 2500000 }
+      orderBy: { ascending: Block_Time }
+      where: {
+        Trade: {
+          Buy: { Currency: { SmartContract: { is: "PAIRED_WITH_ADDRESS" } } }
+          Sell: { Currency: { SmartContract: { is: "SEARCH_TOKEN_ADDRESS" } } }
+        }
+      }
+    ) {
+      Trade {
+        Buy {
+          Price
+          Currency {
+            SmartContract
+            Name
+          }
+        }
+        Sell {
+          Currency {
+            Name
+          }
+        }
+      }
+      Block {
+        Time
+        Number
+      }
+      Transaction {
+        Hash
+      }
+    }
+  }
+}
