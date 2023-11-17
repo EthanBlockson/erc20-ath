@@ -25,4 +25,5 @@ pm2 stop 0
 # .env file
 
 BITQUERY_API_KEY=KEY
+
 TELEGRAM_BOT_TOKEN=KEY
